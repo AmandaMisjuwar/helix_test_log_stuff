@@ -1,1 +1,45 @@
+# Introduction
+## Project goals
 
+## High-level diagram
+
+# Requirements
+# User stories
+User story | 
+------ | 
+As a user, I want to know how often a specific error appears in my application’s builds, so that I can investigate the underlying cause. || 
+As a user, I want to know which builds are causing a repetitive error, so I can investigate the underlying cause. ||
+As a user, I want to see repeatedly occurring errors over a certain date range, so that I have more details when I need to investigate a certain issue.|
+
+
+# Technical Implementation
+## Input
+- Arguments
+    - `repository`
+    - `error_string`
+    - `date_range`
+- Other possible input needs to be further clarified + thought of
+
+## Dependencies
+- Kusto
+- Azure Account Storage
+
+## String Matching
+- Will need to look into different methods
+    - `contains`
+    - regex
+    - wildcard
+    - etc.
+    - 
+## Logic
+- Grab `WorkItem`s from Kusto and make a query in the code (See `KnownIssuesController` in helix services code for an example of interacting with Kusto)
+- Parse the Kusto query result for the different column values.
+- Grab the Azure storage path from the Kusto query result, and somehow go into that path in the code and use the logs text to do the string matching
+
+## Output
+- Number of occurrences of `error_string` in the log files within given `date_range`
+- Builds and dates associated with each `error_string` occurrence
+- PRs associate with that build
+
+## Proof-of-Concept
+- Console app
