@@ -69,4 +69,3 @@ As a user, I want to see repeatedly occurring errors over a certain date range, 
  
 ## Proof-of-Concept
 - Console app
-- 
