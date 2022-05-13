@@ -5,11 +5,10 @@ We want to create a REST API that allows users to find the frequency of a specif
 ## High-level diagram
 
 # Requirements
-# User stories
-User story | 
+User stories | 
 ------ | 
-As a user, I want to know how often a specific error appears in my application’s builds, so that I can investigate the underlying cause. || 
-As a user, I want to know which builds are causing a repetitive error, so I can investigate the underlying cause. ||
+As a user, I want to know how often a specific error appears in my application’s builds, so that I can investigate the underlying cause. | 
+As a user, I want to know which builds are causing a repetitive error, so I can investigate the underlying cause. |
 As a user, I want to see repeatedly occurring errors over a certain date range, so that I have more details when I need to investigate a certain issue.|
 
 
@@ -33,7 +32,8 @@ As a user, I want to see repeatedly occurring errors over a certain date range, 
     - etc.
  
 ## Logic
-- Grab `WorkItem`s from Kusto and make a query in the code (See `KnownIssuesController` in helix services code for an example of interacting with Kusto)
+- 
+- Grab `WorkItem` from Kusto and make a query in the code (See `KnownIssuesProvider` in Helix services code for an example of interacting with Kusto)
 - Parse the Kusto query result for the different column values.
 - Grab the Azure storage path from the Kusto query result, and somehow go into that path in the code and use the logs text to do the string matching
 
