@@ -1,5 +1,6 @@
 # Introduction
 ## Project goals
+We want to create a REST API that allows users to find the frequency of a specific error string in Helix build logs. So we want to be able to query an endpoint with a `repository`, `error_string`, and `date_range` to (?) get a list of all the error occurrences of the string in the build logs created within `date_range`. 
 
 ## High-level diagram
 
@@ -30,7 +31,7 @@ As a user, I want to see repeatedly occurring errors over a certain date range, 
     - regex
     - wildcard
     - etc.
-    - 
+ 
 ## Logic
 - Grab `WorkItem`s from Kusto and make a query in the code (See `KnownIssuesController` in helix services code for an example of interacting with Kusto)
 - Parse the Kusto query result for the different column values.
@@ -41,5 +42,31 @@ As a user, I want to see repeatedly occurring errors over a certain date range, 
 - Builds and dates associated with each `error_string` occurrence
 - PRs associate with that build
 
+#### Possible JSON output:
+    {[
+        {
+            "repository": "",
+            "error_string": "",
+            "date_range": "",
+            "num_occurrences": 00,
+            "build_ids": [],
+        },
+        {
+            "repository": "",
+            "error_string": "",
+            "date_range": "",
+            "num_occurrences": 00,
+            "build_ids": [],
+        },
+        {
+            "repository": "",
+            "error_string": "",
+            "date_range": "",
+            "num_occurrences": 00,
+            "build_ids": [],
+        },
+    ]}
+ 
 ## Proof-of-Concept
 - Console app
+- 
