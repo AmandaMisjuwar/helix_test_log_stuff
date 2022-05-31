@@ -9,19 +9,19 @@ Developers for .NET applications need a way to easily find where a specific erro
 
 
 ## Timeline
-Week    | Milestone 
-------  | ------
- 1      | Onboarding + Introduction to project, Dev environment set-up    
- 2      | Learn Helix basics, write design document
- 3      | Get design document reviews and start implementing POC    
- 4      | Finish implementing POC
- 5      | POC testing + deployment (if possible) + start implementing API
- 6      | Continue API implementation + integrate possible additional features from design doc
- 7      | Finish API implementation  
- 8      | API testing + documentation (Probably want to test out API on same Azure data centre as test logs?)
- 9      | API testing + documentation
- 10      | Prepare for customer presentation
- 11      | Customer presentation
+Week    | Milestone | Status
+------  | ------ | ------------------------------------------------------------------------------------------------ |
+ 1      | Onboarding + Introduction to project, Dev environment set-up | Complete
+ 2      | Learn Helix basics, write design document | Complete
+ 3      | Get design document reviews and start implementing POC   | Waiting on approval
+ 4      | Finish implementing POC | In-progress
+ 5      | POC testing + deployment (if possible) + start implementing API | Not started
+ 6      | Continue API implementation + integrate possible additional features from design doc | Not started
+ 7      | Finish API implementation   | Not started
+ 8      | API testing + documentation (Probably want to test out API on same Azure data centre as test logs?) | Not started
+ 9      | API testing + documentation | Not started
+ 10      | Prepare for customer presentation | Not started
+ 11      | Customer presentation | Not started
  12      | Final week :)
  
  
