@@ -1,5 +1,7 @@
 # Project Epic Draft
 
+Developers for .NET applications need a way to easily find where a specific error has occurred in their failed tests. We want to build an API that given a repository and error message, will return the occurrences of the error in the repository's failed test logs.
+
 ## Business Objectives
 - [ ] P0: Developers can make a call to an API to search for all available Helix test logs that contain a specific error message to help with error investigation
 - [ ] P1: Developers can refer to written documentation to understand how to make calls to the API.
