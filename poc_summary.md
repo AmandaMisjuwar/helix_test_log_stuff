@@ -1,5 +1,5 @@
 # Helix Test Log Search POC Summary
-
+In general, since we are limiting the number of days a user can search for a string, depending on the number of files that are returned by the Kusto query, we get 
 
 ## How it works
 
@@ -65,11 +65,16 @@ This command will search for all instances of the string "Exception" in all the 
         FILES SCANNED/SEC: 0.44242021745364507
         TOTAL FILES SCANNED: 14
 
-
-
 #### Hits 
+        {
+
 
 
 ## Findings
 
-### Tests
+## Future considerations
+- More input sanitization to limit number of rows returned by Kusto and avoid timeouts
+- Error handling for if we try to parse a file that doesn't exist
+- 
+
+
