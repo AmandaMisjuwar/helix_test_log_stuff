@@ -31,7 +31,7 @@ With this functionality, one is able to investigate a specific error and see how
 ## Some data for running times 
 We want this tool to run within a reasonable time, here are some runs on production data and how long it took:
 
-- Include a table like the one included in the POC Insights document
+- Include a table like the one included in the POC Summary document
   
 ## How the project should be used
 
